@@ -1,0 +1,23 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Erro!</h1>
+<h2 class="text-danger">Um erro ocorreu durante o processo.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Pedido ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>Modo Desenvolvimento</h3>
+<p>
+    Mudar para <strong>Desenvolvimento</strong> Mais detalhes do erro...
+</p>
+<p>
+    <strong>O desenvolvimento não será utilizado para o uso de aplicações.</strong>
+    Pode resultar de uma vaga de informação para os utlizadores.
+</p>
